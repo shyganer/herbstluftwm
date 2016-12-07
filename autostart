@@ -10,6 +10,9 @@ hc emit_hook reload
 
 xsetroot -solid '#5A8E3A'
 
+# Use compton for transparency
+compton -f &
+
 # Use urxvt daemon at log
 urxvtd -o -q -f
 
