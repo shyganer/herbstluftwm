@@ -159,6 +159,17 @@ herbstclient set tree_style '╾│ ├└╼─┐'
 # or simply:
 # hc detect_monitors
 
+#hc set_monitors 1920x1080+0+0 1680x1050+1920+0
+hc add dev
+hc add_monitor 1920x1080+0+0 dev develop
+
+hc add ext
+hc add_monitor 1680x1050+1920+0 ext extended
+hc lock_tag extended
+
+# Remove default panning monitor
+hc remove_monitor 0
+
 # find the panel
 panel=~/.config/herbstluftwm/panel.sh
 [ -x "$panel" ] || panel=/etc/xdg/herbstluftwm/panel.sh
