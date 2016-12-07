@@ -11,3 +11,6 @@ sudo apt-get install --install-recommends herbstluftwm dzen2
 ### $HOME/.config/herbstluftwm must exists
 cp /etc/xdg/herbstluftwm/autostart .config/herbstluftwm
 cp /etc/xdg/herbstluftwm/panel.sh .config/herbstluftwm
+
+## Required symbolic links
+sudo ln -s /home/shyganer/b2c/config/herbstluftwm/manage-top-panel.sh /usr/local/bin/manage-top-panel
