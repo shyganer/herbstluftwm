@@ -22,6 +22,9 @@ urxvtd -o -q -f
 # remove all existing keybindings
 hc keyunbind --all
 
+# If TypeMatrix keyboard is connected alternate Alt_L and Super_L
+sh .xmodmap.sh
+
 # keybindings
 # if you have a super key you will be much happier with Mod set to Mod4
 #Mod=Mod1    # Use alt as the main modifier
