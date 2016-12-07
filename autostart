@@ -61,7 +61,9 @@ hc keybind $Mod-Shift-l     shift right
 
 # splitting frames
 # create an empty frame at the specified direction
+hc keybind $Mod-y       split   left    0.5
 hc keybind $Mod-u       split   bottom  0.5
+hc keybind $Mod-i       split   top     0.5
 hc keybind $Mod-o       split   right   0.5
 # let the current frame explode into subframes
 hc keybind $Mod-Control-space split explode
@@ -119,7 +121,7 @@ hc keybind $Mod-BackSpace   cycle_monitor
 hc keybind $Mod-Tab         cycle_all +1
 hc keybind $Mod-Shift-Tab   cycle_all -1
 hc keybind $Mod-c cycle
-hc keybind $Mod-i jumpto urgent
+hc keybind $Mod-semicolon	jumpto urgent
 
 # theme
 hc attr theme.tiling.reset 1
