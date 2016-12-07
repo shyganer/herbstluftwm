@@ -10,6 +10,9 @@ hc emit_hook reload
 
 xsetroot -solid '#5A8E3A'
 
+# Use urxvt daemon at log
+urxvtd -o -q -f
+
 # remove all existing keybindings
 hc keyunbind --all
 
