@@ -10,6 +10,9 @@ hc emit_hook reload
 
 xsetroot -solid '#5A8E3A'
 
+# Add a beautiful background ;)
+feh --bg-scale $HOME/b2c/config/herbstluftwm/3d-abstract-artwork-1920x1080.jpg
+
 # Use compton for transparency
 compton -f &
 
