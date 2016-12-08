@@ -5,3 +5,5 @@ if [ -z "$(herbstclient list_monitors | grep -i ontopvirtualleft | cut -d ',' -f
 else
 	/home/shyganer/b2c/config/herbstluftwm/remove-top-panel.sh
 fi
+
+exit 0
