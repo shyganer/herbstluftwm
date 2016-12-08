@@ -19,4 +19,8 @@ padding_panel onTopVirtualLeft 16
 padding_panel onTopVirtualRight	16
 padding_panel develop 216
 
+if $(is_panel_active onRightVirtualBottom) = true; then
+	padding_panel onRightVirtualBottom 216
+fi
+
 exit 0
