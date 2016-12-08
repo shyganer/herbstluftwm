@@ -84,17 +84,17 @@ is_panel_active ()
 
 	if [ -z "$(herbstclient list_monitors | grep -i $name | cut -d ',' -f 2 | cut -d '"' -f 2)" ]; then
 		unset name
-		return 1
+		echo true
 	else
 		unset name
-		return 0
+		echo false	
 	fi
 }
 
 
 # On commence par creer le tag que prendra le virtual screen.
 #herbstclient add rbtm
-create_new_panel rbrm
+create_new_tag rbtm
 
 # On cree les monitors
 #herbstclient add_monitor 384x1080+1536+0 rbtm onRightVirtualBottom
@@ -115,8 +115,8 @@ padding_panel develop 16 384
 #	herbstclient	pad			onRightVirtualBottom	216		0		0		0
 #fi
 
-if [ "$(is_panel_active onRightVirtualBottom)" -eq 1 ]; then
-	padding_panel onRightVirtualBottom 16 0 0 0
+if $(is_panel_active onTopVirtualRight) = true ; then
+	padding_panel onRightVirtualBottom 16
 else
 	padding_panel onRightVirtualBottom 216 0 0 0
 fi
