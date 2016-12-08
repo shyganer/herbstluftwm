@@ -38,6 +38,7 @@ hc keybind $Mod-Return spawn ${TERMINAL:-urxvtc} # use your $TERMINAL with urxvt
 
 hc keybind $Mod-d spawn rofi -show run -lines 20 -eh 1 -width 50 -padding 295 -opacity "88" -bw 0
 hc keybind $Mod-v spawn manage-top-panel
+hc keybind $Mod-b spawn manage-right-panel
 
 # basic movement
 # focusing clients
