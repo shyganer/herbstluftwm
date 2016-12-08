@@ -15,3 +15,4 @@ cp /etc/xdg/herbstluftwm/panel.sh .config/herbstluftwm
 ## Required symbolic links
 sudo ln -s /home/shyganer/b2c/config/herbstluftwm/manage-top-panel.sh /usr/local/bin/manage-top-panel
 sudo ln -s /home/shyganer/b2c/config/herbstluftwm/manage-right-panel.sh /usr/local/bin/manage-right-panel
+sudo ln -s /home/shyganer/b2c/config/herbstluftwm/manage-left-panel.sh /usr/local/bin/manage-left-panel
