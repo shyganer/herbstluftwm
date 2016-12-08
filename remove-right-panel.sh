@@ -1,9 +1,11 @@
-#!/bin/sh
+#!/bin/bash
+
+source /home/shyganer/b2c/config/herbstluftwm/musthave_functions.sh
 
 # Suppression du panneau au droit du principal
-herbstclient remove_monitor onRightVirtualBottom
+remove_panel onRightVirtualBottom
 
 # Remise du padding a zero pour le panneau principal
-herbstclient pad develop 16 0 0 0
+padding_panel develop 16 0 0 0
 
 exit 0
