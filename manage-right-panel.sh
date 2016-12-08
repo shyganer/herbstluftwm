@@ -1,9 +1,11 @@
-#!/bin/sh
+#!/bin/bash
 
-if [ -z "$(herbstclient list_monitors | grep -i onrightvirtualbottom | cut -d ',' -f 2 | cut -d '"' -f 2)" ]; then
-	/home/shyganer/b2c/config/herbstluftwm/right-panel.sh
-else
+source /home/shyganer/b2c/config/herbstluftwm/musthave_functions.sh
+
+if $(is_panel_active onRightVirtualBottom) = true; then
 	/home/shyganer/b2c/config/herbstluftwm/remove-right-panel.sh
+else
+	/home/shyganer/b2c/config/herbstluftwm/right-panel.sh
 fi
 
 exit 0
