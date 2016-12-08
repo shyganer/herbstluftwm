@@ -23,4 +23,8 @@ if $(is_panel_active onRightVirtualBottom) = true; then
 	padding_panel onRightVirtualBottom 216
 fi
 
+if $(is_panel_active onLeftVirtualBottom) = true; then
+	padding_panel onLeftVirtualBottom 216
+fi
+
 exit 0
