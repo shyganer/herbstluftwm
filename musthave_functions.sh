@@ -82,7 +82,7 @@ is_panel_active ()
 {
 	name=$1
 
-	if [ -z "$(herbstclient list_monitors | grep -i $name | cut -d ',' -f 2 | cut -d '"' -f 2)" ]; then
+	if [ ! -z "$(herbstclient list_monitors | grep -i $name | cut -d ',' -f 2 | cut -d '"' -f 2)" ]; then
 		unset name
 		echo true
 	else
