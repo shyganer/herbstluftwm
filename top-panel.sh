@@ -1,6 +1,6 @@
 #!/bin/bash 
 
-source /home/shyganer/b2c/config/herbstluftwm/musthave_functions.sh
+source /home/shyganer/b2c/my-own/herbstluftwm/musthave_functions.sh
 
 # On commence par creer les tags que prendront les virtuals screens.
 create_new_tag tlft
