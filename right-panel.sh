@@ -7,6 +7,7 @@ create_new_tag rbtm
 
 # On cree les monitors
 create_new_panel 384x1080+1536+0 rbtm onRightVirtualBottom
+hc lock_tag onRightVirtualBottom
 
 # On ajoute les differents padding pour que les virtuals screens ne se chevauchent pas
 # 384 + 16 = 400

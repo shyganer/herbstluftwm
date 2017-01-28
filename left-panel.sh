@@ -7,6 +7,7 @@ create_new_tag lbtm
 
 # On cree les monitors
 create_new_panel 384x1080+0+0 lbtm onLeftVirtualBottom
+hc lock_tag onLeftVirtualBottom
 
 # On ajoute les differents padding pour que les virtuals screens ne se chevauchent pas
 # 384 + 16 = 400

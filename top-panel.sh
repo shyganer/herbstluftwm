@@ -27,4 +27,7 @@ if $(is_panel_active onLeftVirtualBottom) = true; then
 	padding_panel onLeftVirtualBottom 216
 fi
 
+#hc lock_tag tlft
+#hc lock tag trgt
+
 exit 0
