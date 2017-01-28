@@ -1,6 +1,6 @@
 #!/bin/bash 
 
-source /home/shyganer/b2c/config/herbstluftwm/musthave_functions.sh
+source /home/shyganer/b2c/my-own/herbstluftwm/musthave_functions.sh
 
 # On commence par creer les tags que prendront les virtuals screens.
 create_new_tag tlft
@@ -26,5 +26,8 @@ fi
 if $(is_panel_active onLeftVirtualBottom) = true; then
 	padding_panel onLeftVirtualBottom 216
 fi
+
+#hc lock_tag tlft
+#hc lock tag trgt
 
 exit 0

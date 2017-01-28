@@ -11,7 +11,7 @@ hc emit_hook reload
 xsetroot -solid '#5A8E3A'
 
 # Add a beautiful background ;)
-feh --bg-scale $HOME/b2c/config/herbstluftwm/3d-abstract-artwork-1920x1080.jpg
+feh --bg-scale $HOME/b2c/my-own/herbstluftwm/3d-abstract-artwork-1920x1080.jpg
 
 # Use compton for transparency
 compton -f &
@@ -27,8 +27,8 @@ sh .xmodmap.sh
 
 # keybindings
 # if you have a super key you will be much happier with Mod set to Mod4
-#Mod=Mod1    # Use alt as the main modifier
-Mod=Mod4   # Use the super key as the main modifier
+Mod=Mod1    # Use alt as the main modifier
+#Mod=Mod4   # Use the super key as the main modifier
 
 hc keybind $Mod-Shift-q quit
 hc keybind $Mod-Shift-r reload

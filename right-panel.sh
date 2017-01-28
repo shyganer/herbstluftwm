@@ -1,12 +1,13 @@
 #!/bin/bash
 
-source /home/shyganer/b2c/config/herbstluftwm/musthave_functions.sh
+source /home/shyganer/b2c/my-own/herbstluftwm/musthave_functions.sh
 
 # On commence par creer le tag que prendra le virtual screen.
 create_new_tag rbtm
 
 # On cree les monitors
 create_new_panel 384x1080+1536+0 rbtm onRightVirtualBottom
+hc lock_tag onRightVirtualBottom
 
 # On ajoute les differents padding pour que les virtuals screens ne se chevauchent pas
 # 384 + 16 = 400
